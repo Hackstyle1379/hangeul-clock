@@ -3,8 +3,7 @@
 본 프로젝트는 학교 내 방과후 활동으로 이루어진 프로젝트임을 명시합니다.
 
 (강의) 하단의 코코아팹 링크 참조.
-https://kocoafab.cc/make/view/508
-https://www.kocoafab.cc/make/view/701
+https://kocoafab.cc/make/view/508 / https://www.kocoafab.cc/make/view/701
 
 한글시계 6x6 배치.
 https://hangulclock.today/
@@ -15,10 +14,10 @@ https://hangulclock.today/
 기존 자료는 5x5 배치지만, 이 프로젝트는 6x6 배치로써 5x5 보다는 난이도가 다소 높은 점 안내드립니다.
 
 # 사용된 부품
-아두이노 우노
-DM923(LED NeoPixel)
-CR2032(배터리)
-5V2A 어댑터
+아두이노 우노,
+DM923(LED NeoPixel),
+CR2032(배터리),
+5V2A 어댑터,
 Tiny RTC(DS1037)
 
 # 설명
