@@ -1,6 +1,6 @@
 # hangeul-clock
 
-본 프로젝트는 학교 내 방과후 활동으로 이루어진 프로젝트임을 명시합니다.
+본 프로젝트는 학교 내 방과후 활동으로 이루어진 프로젝트임을 안내합니다.
 
 (강의) 하단의 코코아팹 링크 참조.
 https://kocoafab.cc/make/view/508 / https://www.kocoafab.cc/make/view/701
