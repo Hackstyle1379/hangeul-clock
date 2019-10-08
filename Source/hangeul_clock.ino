@@ -96,7 +96,6 @@ void hoursFilter(int hours, int minutes) {
 
 
 void minutesFilter(int minutes) {
-	strip.setPixelColor(30, color);
   if (minutes==1){
     strip.setPixelColor(25, color);
     strip.setPixelColor(30, color);
@@ -132,7 +131,7 @@ void minutesFilter(int minutes) {
   else if (minutes==9){
     strip.setPixelColor(31, color);
     strip.setPixelColor(30, color);
-  }
+	}
   else if (minutes==10){
     strip.setPixelColor(18, color);
     strip.setPixelColor(30, color);
@@ -232,7 +231,7 @@ void minutesFilter(int minutes) {
   }
   /* 10분 단위 표시 */
   
-  if (minutes==31){
+  else if (minutes==31){
     strip.setPixelColor(25, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
