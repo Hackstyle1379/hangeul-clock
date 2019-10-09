@@ -17,8 +17,8 @@ E mail : contact@kocoa.or.kr
 
 #define PIN 6
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(25, PIN, NEO_GRB + NEO_KHZ800);
-uint32_t color = strip.Color(232, 101, 12);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(36, PIN, NEO_GRB + NEO_KHZ800);
+uint32_t color = strip.Color(255, 255, 255);
 
 void hoursFilter(int hours, int minutes) {
   if (hours == 0 && minutes == 0) { //00:00
@@ -26,9 +26,9 @@ void hoursFilter(int hours, int minutes) {
     strip.setPixelColor(35, color);
   }
   else if (hours == 12 && minutes == 0) {
-	strip.setPixelColor(24, color);
+    strip.setPixelColor(24, color);
     strip.setPixelColor(30, color); //정오 표시
-	strip.setPixelColor(14, color);
+    strip.setPixelColor(14, color);
     strip.setPixelColor(16, color);
     strip.setPixelColor(17, color); //12:00
   }
@@ -83,9 +83,11 @@ void hoursFilter(int hours, int minutes) {
     strip.setPixelColor(17, color);
   }
   else if (hours == 12 || hours == 24) {
-    if (minutes > 0) {
-	    strip.setPixelColor(23, color);
-	    strip.setPixelColor(24, color); //자정 표시
+    if (minutes == 0) {
+      strip.setPixelColor(23, color);
+      strip.setPixelColor(24, color); //자정 표시
+    }
+    else {
       strip.setPixelColor(14, color);
       strip.setPixelColor(16, color);
       strip.setPixelColor(17, color);
@@ -125,263 +127,308 @@ void minutesFilter(int minutes) {
     strip.setPixelColor(30, color);
     }
   else if (minutes==8){
-      strip.setPixelColor(32, color);
-      strip.setPixelColor(30, color);
+    strip.setPixelColor(32, color);
+    strip.setPixelColor(30, color);
     }
   else if (minutes==9){
     strip.setPixelColor(31, color);
     strip.setPixelColor(30, color);
-	}
+    }
   else if (minutes==10){
     strip.setPixelColor(18, color);
     strip.setPixelColor(30, color);
-  }
+    }
   /* 10분 단위 표시 */
-  
   else if (minutes==11){
     strip.setPixelColor(25, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==12){
     strip.setPixelColor(26, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==13){
     strip.setPixelColor(27, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==14){
     strip.setPixelColor(28, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==15){
     strip.setPixelColor(29, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==16){
     strip.setPixelColor(34, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==17){
     strip.setPixelColor(33, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==18){
     strip.setPixelColor(32, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==19){
     strip.setPixelColor(31, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==20){
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   /* 10분 단위 표시 */
   
   else if (minutes==21){
     strip.setPixelColor(25, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==22){
     strip.setPixelColor(26, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==23){
     strip.setPixelColor(27, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==24){
     strip.setPixelColor(28, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==25){
     strip.setPixelColor(29, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==26){
     strip.setPixelColor(34, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==27){
     strip.setPixelColor(33, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==28){
     strip.setPixelColor(32, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==29){
     strip.setPixelColor(31, color);
     strip.setPixelColor(22, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==30){
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   /* 10분 단위 표시 */
   
   else if (minutes==31){
     strip.setPixelColor(25, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==32){
     strip.setPixelColor(26, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==33){
     strip.setPixelColor(27, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==34){
     strip.setPixelColor(28, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==35){
     strip.setPixelColor(29, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==36){
     strip.setPixelColor(34, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==37){
     strip.setPixelColor(33, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==38){
     strip.setPixelColor(32, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==39){
     strip.setPixelColor(31, color);
     strip.setPixelColor(21, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==40){
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   /* 10분 단위 표시 */
   else if (minutes==41){
     strip.setPixelColor(25, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==42){
     strip.setPixelColor(26, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==43){
     strip.setPixelColor(27, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==44){
     strip.setPixelColor(28, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==45){
     strip.setPixelColor(29, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==46){
     strip.setPixelColor(34, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==47){
     strip.setPixelColor(33, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==48){
     strip.setPixelColor(32, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==49){
     strip.setPixelColor(31, color);
     strip.setPixelColor(20, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==50){
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==51){
     strip.setPixelColor(25, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==52){
     strip.setPixelColor(26, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==53){
     strip.setPixelColor(27, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==54){
     strip.setPixelColor(28, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==55){
     strip.setPixelColor(29, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==56){
     strip.setPixelColor(34, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==57){
     strip.setPixelColor(33, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==58){
     strip.setPixelColor(32, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
+    strip.setPixelColor(30, color);
+    }
   else if (minutes==59){
     strip.setPixelColor(31, color);
     strip.setPixelColor(19, color);
     strip.setPixelColor(18, color);
-  }
-  else if (minutes==60){
-  }
-  else;
+    strip.setPixelColor(30, color);
+    }
 }
 
 void ledReset() {
-  for (int i = 0; i < 36; i++) {
+  for (int i = 0; i <= 36; i++) {
     strip.setPixelColor(i, 0, 0, 0);
     strip.show();
   }
@@ -439,3 +486,4 @@ void loop() {
   }
   delay(1000);
 }
+
