@@ -1,6 +1,7 @@
 # hangeul-clock
 
 본 프로젝트는 학교 내 방과후 활동으로 이루어진 프로젝트임을 안내합니다.
+CopyRight에 의거하여 1-2버전은 모두 상업적 이용불가, 원제작자 표시함을 안내합니다.
 
 (강의) 하단의 코코아팹 링크 참조.
 https://kocoafab.cc/make/view/508 / https://www.kocoafab.cc/make/view/701
@@ -29,3 +30,6 @@ set_Time.zip의 파일을 압축을 푼뒤 아두이노에 업로드를 해주�
 시리얼 메세지(9600)를 확인하시면 시간이 셋팅이 되어있습니다.
 
 시간이 셋팅이 되어있는 상태에서 한글시계에 대한부분을 업로드 하시면 됩니다.
+
+#원 저작자
+https://github.com/suapapa/HangulClock/
